@@ -1,0 +1,35 @@
+:root {
+    --color-blue-primary: #06609E;
+    --color-blue-secundary: #119BDE;
+    --color-blue-tertiary: #05AAB8;
+    --color-blue-quatenary: #88D5ED;
+
+}
+
+body {
+    background-image: linear-gradient(90deg, var(--color-blue-primary), var(--color-blue-tertiary), var(--color-blue-secundary));
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin: auto;
+    box-shadow: 6px 6px 10px var(--color-blue-primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    text-align: center;
+    color: var(--color-blue-primary);
+    text-shadow: 1px 1px 1px var(--color-blue-secundary);
+}
+
+p {
+    text-align: justify;
+}
