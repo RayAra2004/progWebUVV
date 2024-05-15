@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 17 - Formulário</title>
+</head>
+<body>
+    <div>
+        <h1>Formulário de contato</h1>
+    </div>
+    <section class="formulario">
+        <form action="mailto:raynan.araujo.uvv@gmail.com" method="post">
+            <label for="name">Digite seu nome:</label>
+            <input id="name" type="text">
+            <br>
+            <label for="email">Digite seu email:</label>
+            <input id="email" type="email">
+            <br>
+            <label for="phone">Digite seu telefone:</label>
+            <input id="phone" type="tel">
+            <br>
+            <label for="coment">Digite seu comentário:</label>
+            <textarea id="coment" rows="10" cols="50"></textarea>
+            <br>
+            <label for="date">Informe a data da visita:</label>
+            <input id="date" type="date"></input>
+            <br>
+            <label for="hour">Informe a hora da visita:</label>
+            <input id="hour" type="time"></input>
+            <br>
+            <label>Deseja receber contato:</label>
+                <input id="yes" name="contato" type="radio" value="Sim">Sim</input>
+                <input id="no" name="contato" type="radio" value="Não">Não</input>
+            <br>
+            <label for="assunto">Assunto a receber:</label>
+            <br>
+            <input id="check_auto" type="checkbox" value="auto" name="assunto">Auto</input>
+            <br>
+            <input id="check_negocio" type="checkbox" value="negocio" name="assunto">Negócio</input>
+            <br>
+            <input id="check_esporte" type="checkbox" value="esporte" name="assunto">Esporte</input>
+            <br>
+            <label for="">O que mais gostou?</label>
+            <select name="selecionar" id="selecionar">
+                <option value="gvitoria">Grande Vitória</option>
+                <option value="vilavelha">Vila Velha</option>
+                <option value="guarapari">Guarapari</option>
+            </select>
+            <div class="btn">
+                <input type="submit" id="enviar" value="Enviar">
+                <input type="reset" id="limpar" value="Limpar">
+                <button>Voltar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
