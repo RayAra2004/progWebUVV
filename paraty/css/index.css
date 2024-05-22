@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.logo{
+    width: 150px;
+    object-fit: cover;
+}
+
+.logo img {
+    width: 100%;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header .navegacao{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    font-size: 18px;
+    
+}
+
+.img-principal{
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    
+}
+
+.img-principal img{
+    
+    opacity: 0.9;
+    filter: grayscale(0.1);
+    width: 100%;
+}
+
+#texto-img-principal{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    color: white;
+    font-weight: bolder;
+}
+
+#texto-img-principal h2{
+    text-transform: uppercase;
+}
