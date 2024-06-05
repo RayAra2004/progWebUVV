@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<style>
+    form{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+</style>
+<body>
+    <form id="formIdade">
+        <label for="data">Informe sua data de nascimento</label>
+        <input type="date" name="idade" id="data" placeholder="Informe seu ano de nascimento">
+        
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div>
+        <p>Sua idade é: <span id="idade"></span></p>
+    </div>
+
+    <script>
+        document.getElementById("formIdade").addEventListener("submit", (e) => {
+            e.preventDefault();
+            const hoje = new Date();
+            const nascimento = new Date(document.getElementById("data").value);   
+            let idade = hoje.getFullYear() - nascimento.getFullYear();
+            const mes = hoje.getMonth() - nascimento.getMonth();
+
+            if (mes < 0 || (mes === 0 && hoje.getDate() < nascimento.getDate())) {
+                idade--;
+            }
+
+            document.getElementById("idade").innerHTML = idade;
+        })
+    </script>
+</body>
+</html>
